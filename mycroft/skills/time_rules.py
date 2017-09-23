@@ -157,10 +157,26 @@ class TimeRulesPtBr(AbstractTimeRules):
     def fill_week_days(self, group, days):
         pass
 
+class TimeRulesNlNl(AbstractTimeRules):
+    def __init__(self):
+        super(TimeRulesNlNl, self).__init__()
+
+    def init_rules(self):
+	pass
+
+    def build_repeat_time_regex(self):
+	pass
+
+    def is_all_days(self, group):
+	pass
+
+    def fill_week_days(self, group, days):
+        pass
 
 KEY_MAP = {
     'en-us': TimeRulesEnUs,
-    'pt-br': TimeRulesPtBr
+    'pt-br': TimeRulesPtBr,
+    'nl-nl': TimeRulesNlNl
 }
 
 
